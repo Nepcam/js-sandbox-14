@@ -1,5 +1,5 @@
 let re;
-re = /hello/i; // i = case insensitive
+re = /hello/i; // i = case insensitive for a match
 
 // console.log(re);
 // console.log(re.source);
