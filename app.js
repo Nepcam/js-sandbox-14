@@ -1,3 +1,5 @@
+// Regular Expressions - Evaluation Functions
+
 let re;
 re = /hello/;
 re = /hello/i; // i = case insensitive for a match
@@ -31,4 +33,4 @@ re = /hello/i; // i = case insensitive for a match
 // replace() - Return new string with some or all matches of a pattern
 const str = 'Hello There';
 const newStr = str.replace(re, 'Hi');
-console.log(newStr);
+// console.log(newStr);

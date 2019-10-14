@@ -10,3 +10,5 @@ The `exec()` method executes a search for a match in a specified string. Returns
 
 `test`
 The `test()` method executes a search for a match between a regular expression and a specified string. Returns `true` or `false`.
+
+# Regular Expressions - Metacharacter Symbols
