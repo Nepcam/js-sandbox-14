@@ -5,10 +5,15 @@ let re;
 re = /hello/;
 re = /hello/i;
 
-
+// Metacharacter Symbols
+re = /^h/i;       // Must start with
+re = /World$/i;   // Must end with
+re = /^hello$/i;  // Must begin and end with
+re = /h.llo/i;    // Matches any ONE character
+re = /^h*llo/i;   // Matches any character 0 or more times
 
 // string to match
-const str = 'Hello World';
+const str = 'Heello';
 
 // Log Results
 const result = re.exec(str);
