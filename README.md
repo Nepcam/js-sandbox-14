@@ -12,3 +12,4 @@ The `exec()` method executes a search for a match in a specified string. Returns
 The `test()` method executes a search for a match between a regular expression and a specified string. Returns `true` or `false`.
 
 # Regular Expressions - Metacharacter Symbols
+Metacharacters are the building blocks of regular expressions. Characters in RegEx are understood to be either a metacharacter with a special meaning or a regular character with a literal meaning.
