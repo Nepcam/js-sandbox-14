@@ -14,7 +14,10 @@ re = /^h*llo/i;   // Matches any character 0 or more times
 re = /gre?a?y/i;  // Optional character
 re = /gre?a?y\?/i;  // Escape character
 
-
+// Brackets [] - Character Sets
+re = /gr[ae]y/i;    // Must be an a or e
+re = /[GF]ray/i;    // Must be an G or F
+re = /[^GF]ray/i;   // Match anything except a G or F
 
 // string to match
 const str = 'Gray';
