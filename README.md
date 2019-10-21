@@ -13,3 +13,6 @@ The `test()` method executes a search for a match between a regular expression a
 
 # Regular Expressions - Metacharacter Symbols
 Metacharacters are the building blocks of regular expressions. Characters in RegEx are understood to be either a metacharacter with a special meaning or a regular character with a literal meaning.
+
+# Regular Expressions - Character Sets - Quantifiers
+Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found. ... Ordinarily, quantifiers are greedy; they cause the regular expression engine to match as many occurrences of particular patterns as possible.
