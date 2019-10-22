@@ -18,9 +18,12 @@ re = /gre?a?y\?/i;  // Escape character
 re = /gr[ae]y/i;    // Must be an a or e
 re = /[GF]ray/i;    // Must be an G or F
 re = /[^GF]ray/i;   // Match anything except a G or F
+re = /[A-Z]ray/;    // Match any uppercase letter
+re = /[A-Za-z]ray/;    // Match any lowercase letter
+
 
 // string to match
-const str = 'Gray';
+const str = 'Aray';
 
 // Log Results
 const result = re.exec(str);
