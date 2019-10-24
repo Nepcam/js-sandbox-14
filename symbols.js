@@ -6,13 +6,13 @@ re = /hello/;
 re = /hello/i;
 
 // Metacharacter Symbols - making sure the characters match
-re = /^h/i;       // Must start with
-re = /World$/i;   // Must end with
-re = /^hello$/i;  // Must begin and end with
-re = /h.llo/i;    // Matches any ONE character
-re = /^h*llo/i;   // Matches any character 0 or more times
-re = /gre?a?y/i;  // Optional character
-re = /gre?a?y\?/i;  // Escape character
+re = /^h/i;             // Must start with
+re = /World$/i;         // Must end with
+re = /^hello$/i;        // Must begin and end with
+re = /h.llo/i;          // Matches any ONE character
+re = /^h*llo/i;         // Matches any character 0 or more times
+re = /gre?a?y/i;        // Optional character
+re = /gre?a?y\?/i;      // Escape character
 
 // Brackets [] - Character Sets
 re = /gr[ae]y/i;        // Must be an a or e
@@ -24,15 +24,25 @@ re = /[A-Za-z]ray/;     // Match any letter
 re = /[0-9][0-9]ray/;   // Match any digit or digits
 
 // Braces {} - Quantifiers
-re = /Hel{2}o/i;    // Must occur exactly {m} amount of times
-re = /Hel{2,4}o/i;    // Must occur exactly {m} amount of times
-re = /Hel{2,}o/i;    // Must occur exactly {m} times
+re = /Hel{2}o/i;        // Must occur exactly {m} amount of times
+re = /Hel{2,4}o/i;      // Must occur exactly {m} amount of times
+re = /Hel{2,}o/i;       // Must occur exactly {m} times 
 
 // Parentheses () - Grouping
 re = /^([0-9]x){3}$/
 
+// Shorthand Character Classes
+re = /\w/;              // Word character - alphanumeric or _
+re = /\w+/;             // + = one or more
+re = /\W/;              // Non-Word character eg ($%^&*#@)
+re = /\d/;              // Match any digit 0 or more times
+re = /\D/;              // Match any Non-digit
+re = /\s/;              // Match Whitespace character
+re = /\S/;              // Match Non-Whitespace character
+re = /Hell\b/i;         // Word boundary
+
 // string to match
-const str = '3x3x3x';
+const str = 'Hello Welcome to hell';
 
 // Log Results
 const result = re.exec(str);  // here we are calling the re(variable) along with the exec method and passing in the str(variable)
