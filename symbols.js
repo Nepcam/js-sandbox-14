@@ -41,8 +41,12 @@ re = /\s/;              // Match Whitespace character
 re = /\S/;              // Match Non-Whitespace character
 re = /Hell\b/i;         // Word boundary
 
+// Assertions
+re = /x(?=y)/;          // Match x only if followed by y
+re = /x(?!y)/;          // Match x only if NOT followed by y
+
 // string to match
-const str = 'Hello Welcome to hell';
+const str = 'jsnfieotrieiwxnrroel';
 
 // Log Results
 const result = re.exec(str);  // here we are calling the re(variable) along with the exec method and passing in the str(variable)
